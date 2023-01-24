@@ -13,7 +13,7 @@ jobs:
       - name: Install texlive-latex-extra
         run: sudo apt-get install texlive-latex-extra
       - name: Build pdf
-        run: pdflatex mmayer.ltx -o mahendra_resume.pdf
+        run: pdflatex mmayer.tex -o mahendra_resume.pdf
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with: 
